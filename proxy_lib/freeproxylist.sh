@@ -1,0 +1,5 @@
+w3m -dump -T text/html -cols 120 http://www.us-proxy.org/ | grep -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | awk '{printf("%s:%s\n", $1,$2)}'
+w3m -dump -T text/html -cols 120 http://www.sslproxies.org/ | grep -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | awk '{printf("%s:%s\n", $1,$2)}'
+w3m -dump -T text/html -cols 120 http://free-proxy-list.net/uk-proxy.html | grep -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | awk '{printf("%s:%s\n", $1,$2)}'
+w3m -dump -T text/html -cols 120 http://www.socks-proxy.net/ | grep -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | awk '{printf("%s:%s\n", $1,$2)}'
+w3m -dump -T text/html -cols 120 http://www.google-proxy.net/ | grep -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | awk '{printf("%s:%s\n", $1,$2)}'
